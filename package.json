@@ -1,0 +1,21 @@
+{
+  "name": "minimal-nightwatch-config",
+  "version": "1.0.0",
+  "description": "Minimal Nightwatch config w/ Chrome Driver",
+  "scripts": {
+    "test": "npm run nightwatch",
+    "nightwatch": "nightwatch",
+    "nightwatch:headless": "nightwatch --headless"
+  },
+  "author": "Manuel Wieser",
+  "license": "MIT",
+  "dependencies": {
+    "chromedriver": "^2.36.0",
+    "nightwatch": "^0.9.20"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  }
+}
