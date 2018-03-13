@@ -1,10 +1,17 @@
+require('nightwatch-cucumber')({
+  cucumberArgs: [
+    '--require', 'tests/step_definitions',
+    '--format', 'node_modules/cucumber-pretty',
+    'tests/features',
+  ],
+});
+
 const args = ['no-sandbox'];
 if (process.argv.includes('--headless')) {
   args.push('headless');
 }
 
 module.exports = {
-  src_folders: ['tests'],
   globals_path: 'globals.js',
 
   selenium: {

@@ -9,5 +9,4 @@ npm run nightwatch:headless
 ## Branches
 
 * `master`
-* `report` TODO
-* `cucumber` TODO
+* `cucumber`
