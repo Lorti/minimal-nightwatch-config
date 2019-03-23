@@ -7,23 +7,25 @@ module.exports = {
   src_folders: ['tests'],
   globals_path: 'globals.js',
 
-  selenium: {
-    start_process: false,
+  webdriver: {
+    start_process: true,
   },
 
   test_settings: {
     default: {
-      selenium_port: 9515,
-      selenium_host: 'localhost',
-      default_path_prefix: '',
-
+      webdriver: {
+        port: 9515,
+        server_path: 'node_modules/.bin/chromedriver',
+        cli_args: ['--verbose'],
+      },
       desiredCapabilities: {
         browserName: 'chrome',
-        chromeOptions: {
-          args,
-        },
+        chromeOptions: { args },
         acceptSslCerts: true,
       },
     },
+    // ... add GeckoDriver config
+    // ... add Microsoft WebDriver config
+    // ... add SafariDriver config
   },
 };
