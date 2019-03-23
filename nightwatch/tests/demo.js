@@ -1,5 +1,5 @@
 module.exports = {
-  'Google Search': function (client) {
+  'Google Search': (client) => {
     client
       .url('https://duckduckgo.com/')
       .pause(1000);
