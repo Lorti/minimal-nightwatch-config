@@ -1,4 +1,4 @@
-Feature: DuckDuckGo
+Feature: DuckDuckGo Search
 
 Scenario: Searching DuckDuckGo
 
