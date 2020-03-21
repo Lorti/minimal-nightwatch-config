@@ -1,9 +1,11 @@
+const chromedriver = require('chromedriver');
+
 module.exports = {
   webdriver: {
     start_process: true,
-    port: 9515,
-    server_path: 'node_modules/.bin/chromedriver',
-    cli_args: ['--verbose'],
+    server_path: chromedriver.path,
+    port: 4444,
+    cli_args: ['--port=4444'],
   },
 
   test_settings: {
@@ -13,7 +15,7 @@ module.exports = {
         javascriptEnabled: true,
         acceptSslCerts: true,
         chromeOptions: {
-          args: ['headless', 'disable-gpu'],
+          args: ['headless'],
         },
       },
     },
